@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // pede ao usuário para inserir um dado
+        let dado = prompt('Insira um dado:');
+        
+        // verifica se o usuário inseriu uma entrada válida
+        if (dado === null || dado === '') {
+          alert('Por favor, insira um dado válido.');
+        } else if (!isNaN(dado)) {
+          dado = Number(dado);
+        }
+        
+        // pergunta se o usuário deseja verificar o tipo do dado inserido
+        const confirmacao = confirm('Deseja verificar qual o tipo de dado inserido?');
+        
+        // verifica a escolha do usuário
+        if (confirmacao) {
+          // obtém o tipo de dado
+          const tipoDado = typeof dado;
+        
+          // exibe o tipo de dado na página HTML
+          const resultado = document.getElementById('resultado');
+          resultado.innerHTML = `O tipo do dado é: ${tipoDado}`;
+        } else {
+          // exibe uma mensagem de agradecimento na página HTML
+          const resultado = document.getElementById('resultado');
+          resultado.innerHTML = 'Obrigado por visitar nossa página.';
+        }
+        </script>
+</body>
+</html>
