@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palindromo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+	
+	
+</head>
+<body><br><br>
+	<label for="texto">Digite uma palavra ou frase:</label><br>
+	<input type="text" id="texto"><br>
+	<button onclick="verificarPalindromo()">Verificar</button>
+
+	<script>
+		
+		function verificarPalindromo() {
+			// Obtém o valor do campo de texto
+			const texto = document.getElementById('texto').value;
+
+			// Remove espaços em branco e converte para minúsculas
+			const textoLimpo = texto.toLowerCase().replace(/\s/g, '');
+
+			// Inverte o texto
+			const textoInvertido = textoLimpo.split('').reverse().join('');
+
+			// Verifica se o texto original é igual ao invertido
+			if (textoLimpo === textoInvertido) {
+				alert(`${texto} é um palíndromo!`);
+			} else {
+				alert(`${texto} não é um palíndromo.`);
+			}
+		}
+	</script>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

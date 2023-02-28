@@ -1,0 +1,71 @@
+/* Define a fonte padrão */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-color: #034748;
+    font-size: 50px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    }
+  
+  /* Define o estilo para o cabeçalho */
+  header {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Define o estilo para o título */
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+  
+  /* Define o estilo para o formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  /* Define o estilo para a etiqueta do campo de texto */
+  form label {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #3b5998;
+  }
+  
+  /* Define o estilo para o campo de texto */
+  form input[type="text"] {
+    border: 2px solid #3b5998;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Define o estilo para o botão */
+  form button {
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Define o estilo para a mensagem de alerta */
+  .alert {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #3b5998;
+    font-weight: bold;
+  }
+  
