@@ -5,3 +5,13 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
+a {
+    text-decoration: none;
+    color:rgb(245, 245, 245);
+    font-size: 20px;
+   
+   }
+   
+   a:hover {
+    color: rgb(51, 240, 13);
+    
