@@ -9,31 +9,36 @@
 </head>
 <body>
     <br><br><br>
+	<h1>Relogio SetTimeout()</h1>
 	<h1 id="relogio"></h1>
     
 	<script>
 		function atualizaRelogio() {
-			var data = new Date();
-			var horas = data.getHours();
-			var minutos = data.getMinutes();
-			var segundos = data.getSeconds();
+  var data = new Date();
+  var horas = data.getHours();
+  var minutos = data.getMinutes();
+  var segundos = data.getSeconds();
 
-			horas = zeroAEsquerda(horas);
-			minutos = zeroAEsquerda(minutos);
-			segundos = zeroAEsquerda(segundos);
+  horas = zeroAEsquerda(horas);
+  minutos = zeroAEsquerda(minutos);
+  segundos = zeroAEsquerda(segundos);
 
-			document.getElementById("relogio").innerHTML = horas + ":" + minutos + ":" + segundos;
-		}
+  document.getElementById("relogio").innerHTML = horas + ":" + minutos + ":" + segundos;
 
-		function zeroAEsquerda(num) {
-			if (num < 10) {
-				num = "0" + num;
-			}
-			return num;
-		}
+  // Chama a função atualizaRelogio() 
+  setTimeout(atualizaRelogio, 1000);
+}
 
-		// Atualiza o relógio a cada segundo
-		setInterval(atualizaRelogio, 10);
+function zeroAEsquerda(num) {
+  if (num < 10) {
+    num = "0" + num;
+  }
+  return num;
+}
+
+// Inicia o relógio
+atualizaRelogio();
+
 	</script>
 </body>
 </html>
